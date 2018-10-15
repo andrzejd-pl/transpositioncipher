@@ -13,8 +13,10 @@ public class MainClass {
                 .setColumn(4)
                 .build();
         CipherStrategy cipherStrategy = new TranspositionCipherStrategy();
-        String encryptText = cipherStrategy.encrypt("andrzejdybowski", key);
+        String encryptText = cipherStrategy.encrypt("", key);
 
         System.out.println(encryptText);
+
+        System.out.println(cipherStrategy.decrypt(encryptText, key));
     }
 }

@@ -49,7 +49,7 @@ public class Key {
             }
 
             for (Integer column : columns) {
-                if (column < 0 || column > x) {
+                if (column < 1 || column > x) {
                     throw new Exception("Bad column " + column);
                 }
             }
